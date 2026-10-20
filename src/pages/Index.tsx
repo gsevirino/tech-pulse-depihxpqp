@@ -15,6 +15,7 @@ import {
   Zap,
   Layers,
   Code2,
+  MessageCircle,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
@@ -28,6 +29,7 @@ import {
   PortfolioWorkItem,
   SistemaItem,
   DepoimentoItem,
+  PORTFOLIO_REAL_DATA,
   buildWhatsAppLink,
   CONTATO_INFO,
 } from '@/data/techpulse'
