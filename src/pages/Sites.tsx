@@ -114,30 +114,30 @@ export default function Sites() {
     <div className="space-y-20 pb-20">
       {/* 1. HERO DA PÁGINA */}
       <section className="relative overflow-hidden pt-8 md:pt-14 pb-8">
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-sky-400/15 blur-[100px] rounded-full pointer-events-none -z-10" />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-orange-500/10 blur-[100px] rounded-full pointer-events-none -z-10" />
 
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 text-center space-y-4">
-          <div className="flex items-center justify-center gap-2 text-xs font-semibold text-slate-500">
-            <Link to="/" className="hover:text-sky-600">
+          <div className="flex items-center justify-center gap-2 text-xs font-semibold text-neutral-500">
+            <Link to="/" className="hover:text-orange-500">
               Início
             </Link>
             <span>/</span>
-            <span className="text-sky-600 font-bold">Sites</span>
+            <span className="text-orange-500 font-bold">Sites</span>
           </div>
 
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-50 border border-sky-200/80 text-sky-700 text-xs font-semibold">
-            <Sparkles className="w-3.5 h-3.5 text-sky-500" />
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-50 border border-orange-200 text-orange-600 text-xs font-bold">
+            <Sparkles className="w-3.5 h-3.5 text-orange-500" />
             Engenharia & Design de Sites
           </span>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight max-w-3xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-black tracking-tight max-w-3xl mx-auto">
             Desenvolvimento de Sites que{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-indigo-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-orange-600 to-amber-500">
               Convertem e Impressionam
             </span>
           </h1>
 
-          <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed">
             Do design à performance extrema. Criamos websites sob medida para posicionar sua empresa
             como autoridade e gerar novos negócios todos os dias.
           </p>
@@ -146,31 +146,31 @@ export default function Sites() {
           <div className="pt-4 flex flex-wrap items-center justify-center gap-2">
             <a
               href="#landing-pages"
-              className="text-xs bg-white px-3 py-1.5 rounded-full border border-slate-200 text-slate-700 hover:border-sky-500 hover:text-sky-600 transition"
+              className="text-xs bg-white px-3 py-1.5 rounded-full border border-neutral-200 text-neutral-700 hover:border-orange-500 hover:text-orange-600 transition"
             >
               Landing Pages
             </a>
             <a
               href="#sites-institucionais"
-              className="text-xs bg-white px-3 py-1.5 rounded-full border border-slate-200 text-slate-700 hover:border-sky-500 hover:text-sky-600 transition"
+              className="text-xs bg-white px-3 py-1.5 rounded-full border border-neutral-200 text-neutral-700 hover:border-orange-500 hover:text-orange-600 transition"
             >
               Sites Institucionais
             </a>
             <a
               href="#ecommerce"
-              className="text-xs bg-white px-3 py-1.5 rounded-full border border-slate-200 text-slate-700 hover:border-sky-500 hover:text-sky-600 transition"
+              className="text-xs bg-white px-3 py-1.5 rounded-full border border-neutral-200 text-neutral-700 hover:border-orange-500 hover:text-orange-600 transition"
             >
               E-commerce
             </a>
             <a
               href="#sites-gerenciaveis"
-              className="text-xs bg-white px-3 py-1.5 rounded-full border border-slate-200 text-slate-700 hover:border-sky-500 hover:text-sky-600 transition"
+              className="text-xs bg-white px-3 py-1.5 rounded-full border border-neutral-200 text-neutral-700 hover:border-orange-500 hover:text-orange-600 transition"
             >
               Sites Gerenciáveis (WordPress)
             </a>
             <a
               href="#sites-alta-performance"
-              className="text-xs bg-sky-500 text-white px-3 py-1.5 rounded-full font-semibold hover:bg-sky-600 transition"
+              className="text-xs bg-orange-500 text-white px-3.5 py-1.5 rounded-full font-bold hover:bg-orange-600 transition shadow-sm"
             >
               Foco em Performance (Código Puro)
             </a>
@@ -196,10 +196,10 @@ export default function Sites() {
                 className={`space-y-4 ${isReversed ? 'lg:col-span-7 lg:col-start-6' : 'lg:col-span-7'}`}
               >
                 <div className="flex items-center gap-2">
-                  <div className="w-10 h-10 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center">
                     <Icon className="w-5 h-5" />
                   </div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-sky-600 bg-sky-50 px-2.5 py-0.5 rounded-md border border-sky-100">
+                  <span className="text-xs font-bold uppercase tracking-wider text-orange-600 bg-orange-50 px-2.5 py-0.5 rounded-md border border-orange-200">
                     {type.tag}
                   </span>
                 </div>
@@ -219,7 +219,7 @@ export default function Sites() {
 
                 <div className="pt-4">
                   <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                    <Button className="bg-sky-500 hover:bg-sky-600 text-white rounded-full px-6">
+                    <Button className="bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-full px-6 shadow-md shadow-orange-500/20">
                       Cotar este modelo <ArrowRight className="w-4 h-4 ml-1.5" />
                     </Button>
                   </a>
@@ -258,14 +258,14 @@ export default function Sites() {
         {/* 3. DESTAQUE ESPECIAL: SITES NÃO-GERENCIÁVEIS (FOCO EM PERFORMANCE) */}
         <div
           id="sites-alta-performance"
-          className="rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-sky-950 text-white p-8 sm:p-12 border-2 border-sky-500/40 shadow-2xl relative overflow-hidden"
+          className="rounded-3xl bg-black text-white p-8 sm:p-12 border-2 border-orange-500/40 shadow-2xl relative overflow-hidden"
         >
-          <div className="absolute top-0 right-0 w-96 h-96 bg-sky-500/10 blur-[100px] rounded-full pointer-events-none" />
+          <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/15 blur-[100px] rounded-full pointer-events-none" />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative">
             <div className="lg:col-span-8 space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/20 text-sky-300 text-xs font-semibold border border-sky-500/30">
-                <Gauge className="w-3.5 h-3.5 text-sky-400" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/20 text-orange-400 text-xs font-bold border border-orange-500/30">
+                <Gauge className="w-3.5 h-3.5 text-orange-400" />
                 Diferencial Exclusivo TechPulse
               </div>
 
@@ -273,7 +273,7 @@ export default function Sites() {
                 Sites Não-Gerenciáveis — Foco em Performance Extrema
               </h2>
 
-              <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+              <p className="text-sm sm:text-base text-neutral-300 leading-relaxed">
                 Para quem não precisa alterar conteúdos semanalmente e busca a{' '}
                 <strong>velocidade máxima absoluta</strong>. Construídos em código puro, sem o peso
                 de CMSs pesados ou plugins desnecessários. O resultado é carregamento abaixo de 1
@@ -282,37 +282,39 @@ export default function Sites() {
 
               {/* Badges de tecnologias e atributos */}
               <div className="flex flex-wrap gap-2 pt-2">
-                <span className="px-3 py-1 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/40 text-xs font-semibold">
+                <span className="px-3 py-1 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/40 text-xs font-semibold">
                   HTML5 / CSS3 / JavaScript
                 </span>
-                <span className="px-3 py-1 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/40 text-xs font-semibold">
+                <span className="px-3 py-1 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/40 text-xs font-semibold">
                   React & Next.js
                 </span>
-                <span className="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-xs font-semibold">
+                <span className="px-3 py-1 rounded-full bg-neutral-800 text-white border border-neutral-700 text-xs font-semibold">
                   Core Web Vitals 100/100
                 </span>
-                <span className="px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 text-xs font-semibold">
+                <span className="px-3 py-1 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/40 text-xs font-semibold">
                   SEO Técnico Avançado
                 </span>
-                <span className="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-semibold">
+                <span className="px-3 py-1 rounded-full bg-neutral-800 text-white border border-neutral-700 text-xs font-semibold">
                   Código Limpo & Minificado
                 </span>
-                <span className="px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/40 text-xs font-semibold">
+                <span className="px-3 py-1 rounded-full bg-neutral-800 text-white border border-neutral-700 text-xs font-semibold">
                   Zero Vulnerabilidade de Plugins
                 </span>
               </div>
             </div>
 
-            <div className="lg:col-span-4 bg-slate-900/90 border border-slate-800 rounded-2xl p-6 text-center space-y-4">
-              <div className="w-16 h-16 mx-auto rounded-2xl bg-sky-500/20 text-sky-400 flex items-center justify-center">
+            <div className="lg:col-span-4 bg-neutral-900 border border-neutral-800 rounded-2xl p-6 text-center space-y-4">
+              <div className="w-16 h-16 mx-auto rounded-2xl bg-orange-500/20 text-orange-400 flex items-center justify-center">
                 <Zap className="w-8 h-8" />
               </div>
               <div>
                 <div className="text-3xl font-black text-white">Carregamento &lt; 0.8s</div>
-                <div className="text-xs text-slate-400 mt-1">Velocidade que o Google prioriza</div>
+                <div className="text-xs text-neutral-400 mt-1">
+                  Velocidade que o Google prioriza
+                </div>
               </div>
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="block">
-                <Button className="w-full bg-sky-500 hover:bg-sky-600 text-white font-semibold">
+                <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold">
                   Quero Alta Performance
                 </Button>
               </a>
@@ -353,12 +355,12 @@ export default function Sites() {
 
       {/* 5. CTA FINAL */}
       <section className="max-w-[1200px] mx-auto px-4 sm:px-6">
-        <div className="rounded-3xl bg-gradient-to-r from-sky-600 via-sky-500 to-indigo-600 text-white p-8 sm:p-12 md:p-16 text-center space-y-6 shadow-xl">
+        <div className="rounded-3xl bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 text-white p-8 sm:p-12 md:p-16 text-center space-y-6 shadow-2xl">
           <div className="max-w-2xl mx-auto space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-white">
               Tem um Projeto de Site em Mente?
             </h2>
-            <p className="text-sky-100 text-sm sm:text-base">
+            <p className="text-orange-50 text-sm sm:text-base">
               Conte-nos sua necessidade. Avaliamos se o melhor caminho é uma landing page rápida, um
               portal institucional, WordPress gerenciável ou código puro de alta performance.
             </p>
@@ -366,10 +368,10 @@ export default function Sites() {
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
-                  className="bg-white hover:bg-slate-100 text-slate-900 font-bold rounded-full px-8 shadow-lg"
+                  className="bg-black hover:bg-neutral-900 text-white font-bold rounded-full px-8 shadow-xl transition-transform hover:scale-105"
                 >
                   Solicitar Orçamento via WhatsApp
-                  <ArrowRight className="w-4 h-4 ml-2 text-sky-600" />
+                  <ArrowRight className="w-4 h-4 ml-2 text-orange-400" />
                 </Button>
               </a>
             </div>

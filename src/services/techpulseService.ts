@@ -6,6 +6,8 @@ import {
   SiteItem,
   SistemaItem,
   DepoimentoItem,
+  PortfolioWorkItem,
+  PORTFOLIO_REAL_DATA,
   buildContactFormWhatsAppMessage,
   buildWhatsAppLink,
 } from '@/data/techpulse'
@@ -16,6 +18,33 @@ export interface MensagemContatoInput {
   telefone: string
   mensagem: string
   assunto?: string
+}
+
+export async function fetchFullPortfolio(): Promise<PortfolioWorkItem[]> {
+  try {
+    const records = await pb.collection('portfolio_completo').getFullList({
+      sort: 'ordem,created',
+      requestKey: null,
+    })
+    if (records && records.length > 0) {
+      return records.map((r) => ({
+        id: r.id,
+        titulo: (r.titulo as string) || (r.nome as string),
+        cliente: r.cliente as string,
+        categoria: (r.categoria as 'branding' | 'websites' | 'design-digital') || 'websites',
+        categoriaLabel: (r.categoriaLabel as string) || 'PROJETO',
+        subtitulo: r.subtitulo as string,
+        descricao: (r.descricao as string) || '',
+        imagem: (r.imagem as string) || '',
+        url: (r.url as string) || undefined,
+        destaques: Array.isArray(r.destaques) ? (r.destaques as string[]) : undefined,
+        ordem: typeof r.ordem === 'number' ? r.ordem : undefined,
+      }))
+    }
+  } catch (err) {
+    console.warn('Usando catálogo estático completo do portfólio:', err)
+  }
+  return PORTFOLIO_REAL_DATA
 }
 
 export async function fetchSitesPortfolio(): Promise<SiteItem[]> {

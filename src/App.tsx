@@ -11,6 +11,7 @@ import ProtectedRoute from './components/ProtectedRoute'
 import Index from './pages/Index'
 import Sites from './pages/Sites'
 import Sistemas from './pages/Sistemas'
+import Branding from './pages/Branding'
 import TechPet from './pages/TechPet'
 import CatalogoDigital from './pages/CatalogoDigital'
 import Vhsys from './pages/Vhsys'
@@ -43,6 +44,7 @@ const App = () => (
             <Route path="/sistemas/techpet" element={<TechPet />} />
             <Route path="/sistemas/catalogo-digital" element={<CatalogoDigital />} />
             <Route path="/sistemas/vhsys" element={<Vhsys />} />
+            <Route path="/branding" element={<Branding />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contato" element={<Contato />} />
 

@@ -65,29 +65,28 @@ export default function Contato() {
     <div className="space-y-16 pb-20">
       {/* 1. HERO */}
       <section className="relative overflow-hidden pt-8 md:pt-14 pb-8">
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-sky-400/15 blur-[100px] rounded-full pointer-events-none -z-10" />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-orange-500/10 blur-[100px] rounded-full pointer-events-none -z-10" />
 
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 text-center space-y-4">
-          <div className="flex items-center justify-center gap-2 text-xs font-semibold text-slate-500">
-            <Link to="/" className="hover:text-sky-600">
+          <div className="flex items-center justify-center gap-2 text-xs font-semibold text-neutral-500">
+            <Link to="/" className="hover:text-orange-500">
               Início
             </Link>
             <span>/</span>
-            <span className="text-sky-600 font-bold">Contato</span>
+            <span className="text-orange-500 font-bold">Contato</span>
           </div>
 
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-50 border border-sky-200/80 text-sky-700 text-xs font-semibold">
-            <Sparkles className="w-3.5 h-3.5 text-sky-500" />
-            Atendimento Rápido & Personalizado
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-50 border border-orange-200 text-orange-600 text-xs font-bold">
+            <Sparkles className="w-3.5 h-3.5 text-orange-500" />
+            Atendimento Rápido & Proposta Transparente
           </span>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight max-w-3xl mx-auto">
-            Fale Conosco e Solicite seu{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-indigo-600">
-              Orçamento Sem Compromisso
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-black tracking-tight">
+            Fale com a{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-orange-600 to-amber-500">
+              TechPulse
             </span>
           </h1>
-
           <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Estamos prontos para entender seu desafio técnico e propor a melhor arquitetura para o
             seu site ou sistema web.
